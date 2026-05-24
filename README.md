@@ -22,8 +22,8 @@ Update the Q-value for the current state-action pair (S, A) using the SARSA upda
 Update State and Action and repeat the step 3 untill the episodes ends
 
 ## SARSA LEARNING FUNCTION
-Name: DEEPIKAP
-Register Number: 212223240024
+Name: DEEPIKAP\
+Register Number: 212223240024\
 Sarsa Learning Program
 ```
 def sarsa(env,
@@ -78,8 +78,9 @@ def sarsa(env,
 
     V = np.max(Q, axis=1)
     pi = lambda s: {s:a for s, a in enumerate(np.argmax(Q, axis=1))}[s]
-```
+
     return Q, V, pi, Q_track, pi_track
+```
 ## OUTPUT:
 Optimal policy, Optimal value function
 
